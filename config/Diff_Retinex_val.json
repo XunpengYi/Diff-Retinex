@@ -1,0 +1,19 @@
+{
+    "name": "Diff_Retinex_val",
+    "phase": "val", // not use in infer
+    "gpu_ids": [
+        0
+    ],
+    "path": { //set the path
+        "log": "logs",
+        "tb_logger": "tb_logger",
+        "results": "results",
+        "checkpoint": "checkpoint"
+    },
+    "datasets": {
+        "val": {
+            "dataroot": "test_dataset/eval15",
+            "data_len": -1
+        }
+    }
+}
