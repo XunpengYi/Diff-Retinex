@@ -90,3 +90,18 @@ def transform_full(img, min_max=(0, 1)):
     img = totensor(img)
     ret_img = img * (min_max[1] - min_max[0]) + min_max[0]
     return ret_img
+
+from torchvision import transforms
+from PIL import Image
+def compute_img(path_R, path_L):
+    R = Image.open(path_R)
+    L = Image.open(path_L)
+    data_transform = transforms.Compose(
+        [transforms.ToTensor()])
+    R = data_transform(R)
+    L = data_transform(L)
+    img = R * L
+    img = img.numpy() * 255.0
+
+    img = np.transpose(img, [1, 2, 0])
+    return img
