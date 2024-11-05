@@ -96,7 +96,7 @@ if __name__ == "__main__":
                         idx += 1
                         val_data = val_data[0]
                         diffusion.feed_data(val_data)
-                        diffusion.test(continous=False)
+                        diffusion.test_ddim(continous=False)
                         visuals = diffusion.get_current_visuals()
                         high_img = Metrics.tensor2img(visuals['high'])  # uint8
                         low_img = Metrics.tensor2img(visuals['low'])  # uint8
