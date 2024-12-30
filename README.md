@@ -29,12 +29,22 @@ If you want to test only, you should list your dataset as the followed rule:
                 low/
 ```
 
-## 3. Pretrain Weights
-The pretrain weight for TDN is at [Google Drive](https://drive.google.com/drive/folders/1JmdvKUvzmCO1OoJJmNPTl8husw_pv1dn?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/151X72tHGrVrGuvRFt9goqQ) (code: cgbm). Please place it in the `model/Diff-TDN/weights` folder.
+## 3. Pretrained Weights
+### Offical Weights:
+The pretrained weight for TDN is at [Google Drive](https://drive.google.com/drive/folders/1JmdvKUvzmCO1OoJJmNPTl8husw_pv1dn?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/151X72tHGrVrGuvRFt9goqQ) (code: cgbm). Please place it in the `model/Diff-TDN/weights` folder.
 
-The pretrain weight for Diff-RDA is at [Google Drive](https://drive.google.com/drive/folders/1IAPafApa-FMDJ9CZL1aw1L1tUUkyHIVk?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/15_5yKuUd7uhGA7ZdhldVyg) (code: g6ln). Please place it in the `model/Diff-RDA/weights` folder.
+The pretrained weight for Diff-RDA is at [Google Drive](https://drive.google.com/drive/folders/1IAPafApa-FMDJ9CZL1aw1L1tUUkyHIVk?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/15_5yKuUd7uhGA7ZdhldVyg) (code: g6ln). Please place it in the `model/Diff-RDA/weights` folder.
 
-The pretrain weight for Diff-IDA is at [Google Drive](https://drive.google.com/drive/folders/1r8kCmuYm3_ZscPb7l_tGlAO8-mMTTJ2t?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/1pd79oR38b5ntBEaOSh3FeQ) (code: mikd). Please place it in the `model/Diff-IDA/weights` folder.
+The pretrained weight for Diff-IDA is at [Google Drive](https://drive.google.com/drive/folders/1r8kCmuYm3_ZscPb7l_tGlAO8-mMTTJ2t?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/1pd79oR38b5ntBEaOSh3FeQ) (code: mikd). Please place it in the `model/Diff-IDA/weights` folder.
+
+--------------------------------------------------------------------------------------------------------------------------
+### More Dataset Weights:
+For the benefit of further research, we have released the extended weights trained on [LOLv2](https://github.com/flyywh/CVPR-2020-Semi-Low-Light). 
+
+The pretrained weights for LOLv2 real are at [Google Drive](https://drive.google.com/drive/folders/1sfpEzobXPqgDs9xJ37Czz2TRUXl-QnaZ?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/1OiH1ObbWEexX5EvLf5Ov1Q) (code: mf4d). 
+
+The pretrained weights for LOLv2 syn are at [Google Drive](https://drive.google.com/drive/folders/1Nbv8CbNamjRk49kDRIbmZFgv96Ruc6Tr?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/1OzvY7NlIILNSv-UTI7NGIg) (code: gk6f).
+
 ## 4. Testing
 For low-light image enhancement testing, you need to modify the data path in the `config/Diff_Retinex_val.json` file, and then you can use the following command:
 ```shell
